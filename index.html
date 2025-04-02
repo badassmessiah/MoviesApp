@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <header class="fixed-header ">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-0">
+            <a href="./index.html" class="logo">Mega Movies</a>
+            <div class="text-center mb-4">
+                <button id="dark-mode-toggle" class="btn btn-secondary">
+                    <div class="toggle">
+                        <input type="checkbox">
+                        <span class="button"></span>
+                        <span class="label">☼</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="d-flex justify-content-center align-items-center mb-4 main-heading">Welcome to the Movie App</h1>
+        <p class="lead text-center">
+            Explore popular movies, search for your favorites, and view detailed information.
+        </p>
+    <div class="mb-4">
+        <input type="text" id="search-input" class="form-control" placeholder="Search for a movie...">
+    </div>
+
+<div class="row mt-2 mb-2">
+    <div class="col-lg-6 col-md-12 mb-3">
+        <select id="genre-filter" class="form-select">
+            <option value="">Filter by Genre</option>
+        </select>
+    </div>
+    <div class="col-lg-6 col-md-12 mb-3">
+        <select id="year-filter" class="form-select">
+            <option value="">Filter by Release Year</option>
+        </select>
+    </div>
+</div>
+
+        <div id="movie-grid" class="row"></div>
+
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center" id="pagination">
+            </ul>
+        </nav>
+    </div>
+    <footer class="footer bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2025 MadMovies. 
+                <a href="./index.html" class="text-white text-decoration-none">Home</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="JavaScript/main.js"></script>
+</body>
+</html>
